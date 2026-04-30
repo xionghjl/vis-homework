@@ -1,0 +1,70 @@
+body {
+    background-color: #1a1a1d;
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 960px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* 图表核心样式 */
+svg {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* 坐标轴轴线和文字颜色 */
+.domain {
+    stroke: #555;
+}
+.tick line {
+    stroke: #555;
+}
+.tick text {
+    fill: #ccc;
+    font-size: 13px;
+}
+.axis-title {
+    fill: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-anchor: middle;
+}
+
+/* 数据连线默认样式 */
+.line {
+    fill: none;
+    stroke-width: 1.5px;
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+}
+
+/* 刷选交互时，未选中的线变暗 */
+.line.hidden {
+    stroke: #333 !important;
+    opacity: 0.05;
+}
+
+/* 笔刷样式 */
+.selection {
+    fill: #fff;
+    fill-opacity: 0.2;
+    stroke: #fff;
+}
